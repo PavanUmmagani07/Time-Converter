@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Time Converter</title>
+    <style>
+        .Bg-container {
+            background-image: url('https://assets.ccbp.in/frontend/dynamic-webapps/time-converter-bg.png');
+            height: 100vh;
+        }
+
+        .title-heading {
+            color: #f5f7fa;
+            font-family: "open Sans";
+            font-size: 48px;
+            margin-left: 40px;
+        }
+
+        .paragraph {
+            margin-left: 40px;
+            color: #ffffff;
+            font-family: "Open sans";
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .hours-minutes {
+            margin-left: 40px;
+            color: #ffffff;
+            font-family: "Open sans";
+            font-weight: bold;
+        }
+
+        .Hours-input {
+            margin-left: 40px;
+            font-size: 15px;
+            width: 75vw;
+            border-radius: 8px;
+            padding: 7px;
+        }
+
+        .button {
+            margin-left: 40px;
+            margin-top: 20px;
+            padding: 8px;
+            border-radius: 8px;
+            font-family: "open sans";
+        }
+
+        #errorMsg{
+            margin-left: 40px;
+        }
+        #timeInSeconds{
+            margin-left: 40px;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Bg-container">
+        <h1 class="title-heading">Time <br /> Converter</h1>
+        <p class="paragraph">Enter hours and Minutes <br />values to convert into <br />seconds</p>
+        <label class="hours-minutes" for="hoursInput">Hours*</label>
+        <br />
+        <input type="text" class="Hours-input" id="hoursInput" />
+        <br />
+        <label class="hours-minutes" for="minutesInput">Minutes*</label>
+        <br />
+        <input type="text" class="Hours-input" id="minutesInput" />
+        <button class="button" id="convertBtn">Convert to Seconds</button>
+        <p id="timeInSeconds"></p>
+        <p id="errorMsg"></p>
+    </div>
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>
